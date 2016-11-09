@@ -503,11 +503,11 @@ public class DashboardPanel
 		String text =
 			"<html>" + 
 		    "<span style=\"font-family:monospace;font-size:8.9px;" + color1 + "\">Transparent balance: <span style=\"font-size:9px\">" + 
-				transparentUCBalance + " ZEC </span></span><br/> " +
+				transparentUCBalance + " KMD </span></span><br/> " +
 			"<span style=\"font-family:monospace;font-size:8.9px;" + color2 + "\">Private (Z) balance: <span style=\"font-weight:bold;font-size:9px\">" + 
-		    	privateUCBalance + " ZEC </span></span><br/> " +
+		    	privateUCBalance + " KMD </span></span><br/> " +
 			"<span style=\"font-family:monospace;font-size:8.9px;" + color3 + "\">Total (Z+T) balance: <span style=\"font-weight:bold;font-size:11.5px;\">" + 
-		    	totalUCBalance + " ZEC </span></span>" +
+		    	totalUCBalance + " KMD </span></span>" +
 			"<br/>  </html>";
 		
 		this.walletBalanceLabel.setText(text);
@@ -521,9 +521,9 @@ public class DashboardPanel
 					  "Unconfirmed (unspendable) balance is being shown due to an<br/>" + 
 		              "ongoing transaction! Actual confirmed (spendable) balance is:<br/>" +
 		              "<span style=\"font-size:5px\"><br/></span>" +
-					  "Transparent: " + transparentBalance + " ZEC<br/>" +
-		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " ZEC</span><br/>" +
-					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " ZEC</span>" +
+					  "Transparent: " + transparentBalance + " KMD<br/>" +
+		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " KMD</span><br/>" +
+					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " KMD</span>" +
 					  "</html>";
 		}
 		

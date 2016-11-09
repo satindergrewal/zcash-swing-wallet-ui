@@ -104,7 +104,7 @@ public class OSUtil
 	{
 		// TODO: this way of finding the dir is JAR name dependent - tricky, may not work
 		// if program is repackaged as different JAR!
-		final String JAR_NAME = "ZCashSwingWalletUI.jar";
+		final String JAR_NAME = "KomodoSwingWalletUI.jar";
 		String cp = System.getProperty("java.class.path");
 		if ((cp != null) && (cp.indexOf(File.pathSeparator) == -1) &&
 			(cp.endsWith(JAR_NAME)))
@@ -144,7 +144,7 @@ public class OSUtil
 			return new File(System.getProperty("user.home") + "/Library/Application Support/Zcash").getCanonicalPath();
 		} else
 		{
-			return new File(System.getProperty("user.home") + "/.konmodo").getCanonicalPath();
+			return new File(System.getProperty("user.home") + "/.komodo").getCanonicalPath();
 		}
 	}
 
@@ -153,7 +153,7 @@ public class OSUtil
 	public static String getSettingsDirectory()
 		throws IOException
 	{
-		File dir = new File(System.getProperty("user.home") + "/.ZCashSwingWalletUI");
+		File dir = new File(System.getProperty("user.home") + "/.KomodoSwingWalletUI");
 		if (!dir.exists())
 		{
 			dir.mkdirs();
@@ -191,11 +191,11 @@ public class OSUtil
 			"/usr/bin/", // Typical Ubuntu
 			"/bin/",
 			"/usr/local/bin/",
-			"/usr/local/zcash/bin/",
-			"/usr/lib/zcash/bin/",
+			"/usr/local/komodo/bin/",
+			"/usr/lib/komodo/bin/",
 			"/opt/local/bin/",
-			"/opt/local/zcash/bin/",
-			"/opt/zcash/bin/"
+			"/opt/local/komodo/bin/",
+			"/opt/komodo/bin/"
 		};
 
 		for (String d : dirs)
