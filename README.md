@@ -1,18 +1,20 @@
-# [ZCash](https://z.cash/) Desktop GUI Wallet
+# [Komodo](https://komodoplatform.com/) Desktop GUI Wallet
 
-## Graphical user interface wrapper for the [ZCash](https://z.cash/) command line tools
+NOTE: This is a copy of original project [zcash-swing-wallet-ui](https://github.com/vaklinov/zcash-swing-wallet-ui/). Only for educational purposes. This modified copy is made to work with komodod; expect it not to be stable and will not be maintanied either by the original developer or the person modified it.
 
-This program provides a Graphical User Interface (GUI) for the ZCash client tools that acts as a wrapper and 
+## Graphical user interface wrapper for the [Komodo](https://komodoplatform.com/) command line tools
+
+This program provides a Graphical User Interface (GUI) for the Komodo client tools that acts as a wrapper and 
 presents the information in a user-friendly manner.
 
-![Screenshot](https://github.com/vaklinov/zcash-swing-wallet-ui/raw/master/docs/ZCashWallet.png "Main Window")
+![Screenshot](https://github.com/satindergrewal/zcash-swing-wallet-ui/raw/master/docs/komodo-swing-wallet-gui.png "Main Window")
 
-#### New/Experimental: [ZCash Desktop GUI Wallet for MAC OS X](https://github.com/vaklinov/zcash-swing-wallet-ui/blob/master/docs/Readme-Mac.md) is now available
+#### New/Experimental: [Komodo Desktop GUI Wallet for MAC OS X](https://github.com/vaklinov/zcash-swing-wallet-ui/blob/master/docs/Readme-Mac.md) is now available
 
 ## Building, installing and running the Wallet GUI
 
-Before installing the Desktop GUI Wallet you need to have ZCash up and running. The following [guide](https://github.com/zcash/zcash/wiki/1.0-User-Guide) 
-explains how to set up [ZCash](https://z.cash/). There is also a user-friendly [instructional video](https://www.youtube.com/watch?v=ZoRFLkZG0zg&feature=youtu.be)
+Before installing the Desktop GUI Wallet you need to have Komodo up and running. The following [guide](https://github.com/zcash/zcash/wiki/1.0-User-Guide) 
+explains how to set up [Komodo](https://komodoplatform.com/). There is also a user-friendly [instructional video](https://www.youtube.com/watch?v=ZoRFLkZG0zg&feature=youtu.be)
 on the same topic.
 
 **For security reasons it is recommended to always build the GUI wallet program from GitHub**
@@ -49,7 +51,7 @@ use [ZCash Desktop GUI Wallet - binary release v0.35-beta](https://github.com/va
 
    As a start you need to clone the zcash-swing-wallet-ui Git repository:
    ```
-   user@ubuntu:~/build-dir$ git clone https://github.com/vaklinov/zcash-swing-wallet-ui.git
+   user@ubuntu:~/build-dir$ git clone https://github.com/satindergrewal/zcash-swing-wallet-ui.git
    ```
    Change the current directory:
    ```
@@ -71,12 +73,12 @@ use [ZCash Desktop GUI Wallet - binary release v0.35-beta](https://github.com/va
 
   3.1. If you have built ZCash from source code:
 
-   Assuming you have already built from source code [ZCash](https://z.cash/) in directory `/home/user/zcash/src` (for 
+   Assuming you have already built from source code [ZCash](https://z.cash/) in directory `/home/user/komodo/src` (for 
    example - this is the typical build dir. for ZCash v1.0.0) which contains the command line tools `zcash-cli` 
    and `zcashd` you need to take the created file `./build/jars/ZCashSwingWalletUI.jar` and copy it 
-   to diretcory `/home/user/zcash/src` (the same dir. that contains `zcash-cli` and `zcashd`). Example copy command:
+   to diretcory `/home/user/komodo/src` (the same dir. that contains `zcash-cli` and `zcashd`). Example copy command:
    ```
-   user@ubuntu:~/build-dir/zcash-swing-wallet-ui$ cp ./build/jars/ZCashSwingWalletUI.jar /home/user/zcash/src    
+   user@ubuntu:~/build-dir/zcash-swing-wallet-ui$ cp ./build/jars/ZCashSwingWalletUI.jar /home/user/komodo/src    
    ```
    
   3.2. If you have installed the ZCash [binary packages](https://github.com/zcash/zcash/wiki/Debian-binary-packages)
@@ -86,21 +88,21 @@ use [ZCash Desktop GUI Wallet - binary release v0.35-beta](https://github.com/va
    /usr/bin/zcash-cli
    /usr/bin/zcashd
    ```
-   The ZCash GUI wallet knows how to find them there. You may place the file  `./build/jars/ZCashSwingWalletUI.jar`
+   The Komodo GUI wallet knows how to find them there. You may place the file  `./build/jars/ZCashSwingWalletUI.jar`
    anywhere in your `/home` directory that you find convenient and start it from there.
 
-4. Running the installed ZCash GUI wallet
+4. Running the installed Komodo GUI wallet
 
    Before running the GUI you need to start zcashd (e.g. `zcashd --daemon`). The wallet GUI is a Java program packaged 
    as an executable JAR file. It may be run from command line or started from another GUI tool (e.g. file manager). 
    Assuming you have already installed [ZCash](https://z.cash/) and the GUI Wallet `ZCashSwingWalletUI.jar` in 
-   directory `/home/user/zcash/src` one way to run it from command line is:
+   directory `/home/user/komodo/src` one way to run it from command line is:
    ```
-   user@ubuntu:~/build-dir/zcash-swing-wallet-ui$ java -jar /home/user/zcash/src/ZCashSwingWalletUI.jar
+   user@ubuntu:~/build-dir/zcash-swing-wallet-ui$ java -jar /home/user/komodo/src/ZCashSwingWalletUI.jar
    ```
    If you are using Ubuntu (or similar ;) Linux you may instead just use the file manager and 
    right-click on the `ZCashSwingWalletUI.jar` file and choose the option "Open with OpenJDK 8 Runtime". 
-   This will start the ZCash GUI wallet.
+   This will start the Komodo GUI wallet.
 
 ### Donations accepted
 At the present time this project is non-commercial in nature and developed by volunteers. If you find the GUI
