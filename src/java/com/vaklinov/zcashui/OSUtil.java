@@ -144,7 +144,7 @@ public class OSUtil
 			return new File(System.getProperty("user.home") + "/Library/Application Support/Zcash").getCanonicalPath();
 		} else
 		{
-			return new File(System.getProperty("user.home") + "/.zcash").getCanonicalPath();
+			return new File(System.getProperty("user.home") + "/.konmodo").getCanonicalPath();
 		}
 	}
 
