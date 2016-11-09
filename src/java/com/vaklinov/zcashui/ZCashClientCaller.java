@@ -100,18 +100,18 @@ public class ZCashClientCaller
 	{
 		// Detect daemon and client tools installation
 		File dir = new File(installDir);
-	    zcashcli = new File(dir, "zcash-cli");
+	    zcashcli = new File(dir, "komodo-cli");
 
 		if (!zcashcli.exists())
 		{
-			zcashcli = OSUtil.findZCashCommand("zcash-cli");
+			zcashcli = OSUtil.findZCashCommand("komodo-cli");
 		}
 
 		if ((zcashcli == null) || (!zcashcli.exists()))
 		{
 			throw new IOException(
-				"The ZCash installation directory " + installDir + " needs to contain " +
-				"the command line utilities zcashd and zcash-cli. zcash-cli is missing!");
+				"The Komodo installation directory " + installDir + " needs to contain " +
+				"the command line utilities komodod and komodo-cli. komodo-cli is missing!");
 		}
 	}
 
