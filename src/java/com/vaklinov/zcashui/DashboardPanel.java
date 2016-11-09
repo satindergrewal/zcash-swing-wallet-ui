@@ -122,13 +122,13 @@ public class DashboardPanel
 		
 		JPanel tempPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 9));
 		JLabel logoLabel = new JLabel(new ImageIcon(
-			this.getClass().getClassLoader().getResource("images/Z-yellow.orange-logo-small.png")));
+			this.getClass().getClassLoader().getResource("images/komodo-logo-small.png")));
 		tempPanel.add(logoLabel);
 		//tempPanel.add(new JLabel(" "));
-		JLabel zcLabel = new JLabel("Cash Wallet        ");
+		JLabel zcLabel = new JLabel("Komodo Wallet        ");
 		zcLabel.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 32));
 		tempPanel.add(zcLabel);
-		tempPanel.setToolTipText("Powered by ZCash");
+		tempPanel.setToolTipText("Powered by Komodo");
 		balanceStatusPanel.add(tempPanel, BorderLayout.WEST);
 				
 		JLabel transactionHeadingLabel = new JLabel(
