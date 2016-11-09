@@ -79,8 +79,8 @@ public class ZCashInstallationObserver
 
 		if ((!zcashd.exists()) || (!zcashcli.exists()))
 		{
-			zcashd = OSUtil.findZCashCommand("zcashd");
-			zcashcli = OSUtil.findZCashCommand("zcash-cli");
+			zcashd = OSUtil.findZCashCommand("komodod");
+			zcashcli = OSUtil.findZCashCommand("komodo-cli");
 		}
 
 		System.out.println("Using ZCash utilities: " +
