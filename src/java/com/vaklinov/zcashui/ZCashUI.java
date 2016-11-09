@@ -85,10 +85,10 @@ public class ZCashUI
     public ZCashUI()
         throws IOException, InterruptedException, WalletCallException
     {
-        super("ZCash Swing Wallet UI 0.38 (beta)");
+        super("Komodo Swing Wallet UI 0.38 (beta)");
         ClassLoader cl = this.getClass().getClassLoader();
 
-        this.setIconImage(new ImageIcon(cl.getResource("images/Z-yellow.orange-logo.png")).getImage());
+        this.setIconImage(new ImageIcon(cl.getResource("images/komodo-logo.png")).getImage());
 
         Container contentPane = this.getContentPane();
 
@@ -273,7 +273,7 @@ public class ZCashUI
     {
         try
         {
-            System.out.println("Starting ZCash Swing Wallet ...");
+            System.out.println("Starting Komodo Swing Wallet ...");
             System.out.println("OS: " + System.getProperty("os.name") + " = " + OSUtil.getOSType());
             System.out.println("Current directory: " + new File(".").getCanonicalPath());
             System.out.println("Class path: " + System.getProperty("java.class.path"));
