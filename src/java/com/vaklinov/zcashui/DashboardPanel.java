@@ -375,7 +375,7 @@ public class DashboardPanel
 		}
 		
 		String text =
-			"<html><span style=\"font-weight:bold;color:#303030\">zcashd</span> status: " + 
+			"<html><span style=\"font-weight:bold;color:#303030\">komodod</span> status: " + 
 		    daemonStatus + ",  " + runtimeInfo + " <br/>" +
 			"Wallet: <span style=\"font-weight:bold;color:#303030\">" + walletDAT.getCanonicalPath() + "</span>" + 
 			walletEncryption + " <br/> " +
