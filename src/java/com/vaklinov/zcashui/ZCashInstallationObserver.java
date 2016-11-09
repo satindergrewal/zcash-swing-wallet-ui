@@ -143,7 +143,7 @@ public class ZCashInstallationObserver
 					} catch (NumberFormatException nfe) { /* TODO: Log or handle exception */ };
 				} else if (i == 10)
 				{
-					if ((token.equals("zcashd")) || (token.endsWith("/zcashd")))
+					if ((token.equals("komodod")) || (token.endsWith("/komodod")))
 					{
 						info.status = DAEMON_STATUS.RUNNING;
 						foundZCash = true;
