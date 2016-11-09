@@ -74,8 +74,8 @@ public class ZCashInstallationObserver
 		}
 
 		// TODO: names will change on Windows
-		File zcashd = new File(dir, "zcashd");
-		File zcashcli = new File(dir, "zcash-cli");
+		File zcashd = new File(dir, "komodod");
+		File zcashcli = new File(dir, "komodo-cli");
 
 		if ((!zcashd.exists()) || (!zcashcli.exists()))
 		{
